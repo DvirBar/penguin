@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import { useState } from 'react';
 
@@ -19,7 +18,6 @@ function initArr() {
 
 function selectBlues() {
   const arr = initArr()
-  let counter = 0
   for(let i = 0; i < 19; i++) {
     let found = false
     while(!found) {
@@ -27,11 +25,9 @@ function selectBlues() {
       if(!arr[num]) {
         arr[num] = true
         found = true
-        counter ++
       }
     }
   }
-  console.log(arr);
   return arr
 }
 
